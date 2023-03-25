@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #main {
 
 }
@@ -18,13 +22,20 @@
 }
 
 #nav li {
-    color: #fff;
-    padding: 0 24px;
-    display: inline-block
+    display: inline-block;   
 }
 
 #nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 24px;
     line-height: 46px;
+    display: inline-block;
+}
+
+#nav li:hover a {
+    color: #000;
+    background-color: #ccc;
 }
 
 #nav .subnav {

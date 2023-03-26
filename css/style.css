@@ -22,37 +22,64 @@ html {
 }
 
 #nav li {
-    display: inline-block;   
+    display: inline-block;
+    position: relative;   
+}
+
+#nav > li > a {
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
 }
 
 #nav li a {
-    color: #fff;
     text-decoration: none;
     padding: 0 24px;
     line-height: 46px;
-    display: inline-block;
 }
 
-#nav li:hover a {
+#nav > li:hover > a,
+.subnav > li:hover > a {
     color: #000;
     background-color: #ccc;
 }
 
+#nav li:hover .subnav {
+    display: block;
+}
+
 #nav .subnav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;    
+    min-width: 160px;
+}
+
+#nav .subnav a {
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .subnav a,
+#nav .subnav li {
+    color: #000;
+    display: block;
 }
 
 #slider {
-    height: 100px;
-    background-color: #ccc;
+    min-height: 300px;
+    background-color: #fff;
 }
 
 #content {
-    height: 100px;
+    min-height: 300px;
     background-color: #fff;
 }
 
 #footer {
-    height: 100px;
+    min-height: 300px;
     background-color: #ccc;
 }

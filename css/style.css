@@ -95,7 +95,7 @@ html {
 
 #slider {
     margin-top: 46px;
-    min-height: 300px;
+    padding-top: 50%;
     background-color: #ccc;
 }
 
